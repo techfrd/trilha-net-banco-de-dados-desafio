@@ -72,3 +72,17 @@ ON
     f.id = g.id
 WHERE 
 	g.Genero = 'Mistério'
+
+-- 12
+SELECT 
+	f.nome AS Nome,
+	a.PrimeiroNome, 
+	a.UltimoNome,
+	p.Papel	
+FROM Filmes f
+INNER JOIN
+	ElencoFilme p ON f.Id = p.IdFilme
+INNER JOIN 
+	Atores a ON p.IdAtor = a.Id
+ORDER BY 
+	f.Nome, a.UltimoNome
