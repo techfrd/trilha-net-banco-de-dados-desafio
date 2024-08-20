@@ -48,3 +48,15 @@ SELECT
 FROM Atores
 WHERE Genero = 'F'
 ORDER BY PrimeiroNome
+
+-- 10
+SELECT 
+    f.nome AS NomeFilme, 
+    g.Genero AS Genero   
+FROM 
+    Filmes f
+INNER JOIN 
+    Generos g 
+ON 
+    f.id = g.id;
+
