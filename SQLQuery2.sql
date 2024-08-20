@@ -39,3 +39,12 @@ SELECT
 	Genero
 FROM Atores
 WHERE Genero = 'M'
+
+-- 9
+SELECT 
+	PrimeiroNome,
+	UltimoNome,
+	Genero
+FROM Atores
+WHERE Genero = 'F'
+ORDER BY PrimeiroNome
