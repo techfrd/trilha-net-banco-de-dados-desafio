@@ -31,3 +31,11 @@ SELECT
 FROM Filmes
 GROUP BY Ano
 ORDER BY QuantidadeFilmes DESC
+
+-- 8
+SELECT 
+	PrimeiroNome,
+	UltimoNome,
+	Genero
+FROM Atores
+WHERE Genero = 'M'
