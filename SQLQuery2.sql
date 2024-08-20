@@ -60,3 +60,15 @@ INNER JOIN
 ON 
     f.id = g.id;
 
+-- 11
+SELECT 
+    f.nome AS NomeFilme, 
+    g.Genero AS Genero   
+FROM 
+    Filmes f
+INNER JOIN 
+    Generos g 
+ON 
+    f.id = g.id
+WHERE 
+	g.Genero = 'Mistério'
