@@ -23,3 +23,11 @@ ORDER BY Ano
 SELECT * FROM Filmes
 WHERE Duracao > '100' AND Duracao < '150'
 ORDER BY Duracao
+
+-- 7
+SELECT 
+	Ano,
+	COUNT(*) QuantidadeFilmes
+FROM Filmes
+GROUP BY Ano
+ORDER BY QuantidadeFilmes DESC
